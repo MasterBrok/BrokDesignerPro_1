@@ -1,4 +1,18 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
+    <SolidColorBrush x:Key="bgEllipse1" Color="#FFF0E1"/>
+    <SolidColorBrush x:Key="bgEllipse2" Color="#F6FBFF"/>
+    <SolidColorBrush x:Key="fgTitle1" Color="#5E4D55"/>
+    <SolidColorBrush x:Key="fgSubTitle2" Color="#F5428C"/>
+    <SolidColorBrush x:Key="fgSubTitle3" Color="#C9C2B7"/>
+    <SolidColorBrush x:Key="bgButton1" Color="#F44C93"/>
+    <SolidColorBrush x:Key="bgButton2" Color="#FFFCF9"/>
+    <SolidColorBrush x:Key="fgSelectMenuItem" Color="#725F61"/>
+    <SolidColorBrush x:Key="fgUnSelectMenuItem" Color="#CDBEB1"/>
+    <SolidColorBrush x:Key="bgStatusBar" Color="#F84A92"/>
+    <SolidColorBrush x:Key="bgSubStatusbarItem" Color="#E82B7B"/>
+    <SolidColorBrush x:Key="bgScoreStart" Color="#FFC48C"/>
+    <SolidColorBrush x:Key="bgProfile" Color="#FFD189"/>
+    <SolidColorBrush x:Key="fgTitleProfile" Color="#FFF3E3"/>
 </ResourceDictionary>
