@@ -7,4 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="CustomControls\" />
+    <Folder Include="Models\" />
+    <Folder Include="Paths\" />
+    <Folder Include="Resources\Colors\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Windows\" />
+  </ItemGroup>
+
 </Project>
