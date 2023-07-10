@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:BrokFindTeacher.UserControls"
+             xmlns:cc="clr-namespace:BrokFindTeacher.CustomControls"
              mc:Ignorable="d"
              d:DesignHeight="380"
              d:DesignWidth="380"
@@ -47,6 +48,29 @@
                            />
                 </Border>
             </Border>
+            <Canvas Grid.Row="1">
+                <cc:ccButtonUserControl
+                    DataGeometry="{StaticResource PathAdd}"
+                    Width="50"
+                    Height="50"
+                    Canvas.Left="95"
+                    Canvas.Top="26"
+                    />
+                <cc:ccButtonUserControl
+                    DataGeometry="{StaticResource PathCamera}"
+                    Width="50"
+                    Height="50"
+                    Canvas.Left="167"
+                    Canvas.Top="75"
+                    />
+                <cc:ccButtonUserControl
+                    DataGeometry="{StaticResource PathMessage}"
+                    Width="50"
+                    Height="50"
+                    Canvas.Left="234"
+                    Canvas.Top="26"
+                    />
+            </Canvas>
         </Grid>
     </Border>
 </UserControl>

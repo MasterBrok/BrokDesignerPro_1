@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace BrokFindTeacher.CustomControls
 {
@@ -44,11 +33,26 @@ namespace BrokFindTeacher.CustomControls
     ///     <MyNamespace:ccButtonUserControl/>
     ///
     /// </summary>
-    public class ccButtonUserControl : Nutton
+    public class ccButtonUserControl : Button
     {
         static ccButtonUserControl()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(ccButtonUserControl), new FrameworkPropertyMetadata(typeof(ccButtonUserControl)));
         }
+
+
+
+        public Geometry DataGeometry
+        {
+            get { return (Geometry)GetValue(DataGeometryProperty); }
+            set { SetValue(DataGeometryProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for DataGeometry.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty DataGeometryProperty =
+            DependencyProperty.Register("DataGeometry", typeof(Geometry), typeof(ccButtonUserControl), new PropertyMetadata(default));
+
+
+
     }
 }

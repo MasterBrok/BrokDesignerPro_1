@@ -34,9 +34,13 @@
                 <Ellipse Style="{StaticResource EllipseLeft}"/>
             </Border>
         </Border>
-        <Border
-            Style="{StaticResource BorderBottom}"
-            />
+        <Canvas >
+            <Border
+                Style="{StaticResource BorderBottom}" Canvas.Left="156" Canvas.Top="562"
+                >
+                <uc:usPeople Canvas.Top="-70" Margin="160,-56,-160,56"/>
+            </Border>
+        </Canvas>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
