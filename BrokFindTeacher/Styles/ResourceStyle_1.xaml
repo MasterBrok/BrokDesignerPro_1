@@ -32,11 +32,10 @@
         </Setter>
     </Style>
     <Style TargetType="Border" x:Key="BorderBottom">
-        <Setter Property="Width" Value="700"/>
+        <Setter Property="Width" Value="850"/>
         <Setter Property="Height" Value="150"/>
         <Setter Property="VerticalAlignment" Value="Bottom"/>
         <Setter Property="Background" Value="{StaticResource bgStatusBar}"/>
         <Setter Property="CornerRadius" Value="50"/>
     </Style>
-
 </ResourceDictionary>

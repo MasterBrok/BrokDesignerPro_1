@@ -16,4 +16,11 @@
         <Setter Property="Opacity" Value=".6"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
     </Style>
+    <Style TargetType="Label" x:Key="LabelWindnow">
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMono}"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Foreground" Value="{StaticResource fgTitle1}"/>
+    </Style>
 </ResourceDictionary>
