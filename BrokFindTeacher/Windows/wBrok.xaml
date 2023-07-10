@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BrokFindTeacher.Windows"
+        xmlns:cc="clr-namespace:BrokFindTeacher.CustomControls"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -45,6 +46,13 @@
                     <Label
                         Style="{StaticResource LabelPath}"
                         Content="Brok" />
+                </StackPanel>
+                <StackPanel Canvas.Top="65"
+                            Canvas.Left="402"
+                            Orientation="Horizontal">
+                    <cc:ccStatusBarItem Content="Why Olley?" />
+                    <cc:ccStatusBarItem Content="Learn" />
+                    <cc:ccStatusBarItem Content="Teachers" />
                 </StackPanel>
             </Canvas>
         </Grid>
