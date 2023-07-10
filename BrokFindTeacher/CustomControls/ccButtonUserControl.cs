@@ -39,9 +39,6 @@ namespace BrokFindTeacher.CustomControls
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(ccButtonUserControl), new FrameworkPropertyMetadata(typeof(ccButtonUserControl)));
         }
-
-
-
         public Geometry DataGeometry
         {
             get { return (Geometry)GetValue(DataGeometryProperty); }
@@ -51,8 +48,5 @@ namespace BrokFindTeacher.CustomControls
         // Using a DependencyProperty as the backing store for DataGeometry.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty DataGeometryProperty =
             DependencyProperty.Register("DataGeometry", typeof(Geometry), typeof(ccButtonUserControl), new PropertyMetadata(default));
-
-
-
     }
 }

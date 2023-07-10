@@ -4,40 +4,64 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:BrokFindTeacher.UserControls"
+             xmlns:models="clr-namespace:BrokFindTeacher.Models"
              mc:Ignorable="d"
              d:DesignHeight="200"
              d:DesignWidth="200"
              >
-    <Canvas Background="Transparent">
+    <UserControl.DataContext>
+        <models:Person/>
+    </UserControl.DataContext>
+    <Grid Background="Transparent" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
 
-        <Border Canvas.Left="10" Canvas.Top="71"
-                Background="{StaticResource bgPeopleUserControls}"
-                CornerRadius="40"
-                Width="144"
-                Height="125" HorizontalAlignment="Left" VerticalAlignment="Top"
-                >
-            <Canvas >
-                <local:usScoreStrar Canvas.Top="80" Canvas.Left="10"/>
+        <Border
+            Background="{StaticResource bgPeopleUserControls}"
+            CornerRadius="40"
+            Width="144"
+            Height="125" HorizontalAlignment="Left" VerticalAlignment="Top"  Grid.ColumnSpan="2"
+            >
+            <Border.Style>
+                <Style TargetType="Border">
+                    <Setter Property="Opacity" Value="1"/>
+                    <Setter Property="Margin" Value="11,17,0,0"/>
+                    <Style.Triggers
+                        >
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.6"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+            <Grid >
+
                 <Label
-                    Content="Wpf"
+                    Content="{Binding Language}"
                     Foreground="White"
                     FontFamily="{StaticResource Dosis}"
                     FontWeight="Heavy"
-                    Canvas.Top="60"
-                    Height="25"
-                    Width="33"
-                    Canvas.Left="55"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
                     >
+
                 </Label>
-            </Canvas>
+                <local:usScoreStrar VerticalAlignment="Center"
+                                    Margin="10 35 0 0"/>
+            </Grid>
         </Border>
         <Border
-            BorderBrush="White"
-            BorderThickness="1"
             CornerRadius="30"
             Width="100"
             Height="150"
-            Canvas.Left="11" Canvas.Top="-38"
-            />
-    </Canvas>
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left" Margin="5,-95,0,0" Grid.ColumnSpan="2"
+            >
+            <Border.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="{Binding Image}"/>
+            </Border.Background>
+        </Border>
+    </Grid>
 </UserControl>

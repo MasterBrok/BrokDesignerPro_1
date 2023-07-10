@@ -15,9 +15,9 @@
     <SolidColorBrush x:Key="bgProfile" Color="#FFD189"/>
     <SolidColorBrush x:Key="fgTitleProfile" Color="#FFF3E3"/>
     <SolidColorBrush x:Key="bgPathTitle" Color="#FDB872"/>
-    <Color x:Key="GradiantBorderUserControls" >#F4AF6E</Color>
     <SolidColorBrush x:Key="bbBorderUserControls" Color="#EFD5AF"/>
     <SolidColorBrush x:Key="bgPeopleUserControls" Color="#E82B7B"/>
     <SolidColorBrush x:Key="bgFillScore" Color="#E7C278"/>
     <SolidColorBrush x:Key="bgUnFillScore" Color="White"/>
+    <Color x:Key="GradiantBorderUserControls" >#F4AF6E</Color>
 </ResourceDictionary>

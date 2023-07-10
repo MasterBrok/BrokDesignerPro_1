@@ -8,7 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repository\" />
+    <None Remove="Resources\Images\Ben.jpg" />
+    <None Remove="Resources\Images\Brok.jpg" />
+    <None Remove="Resources\Images\Hani.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\Ben.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\Hani.jpg" />
+    <Resource Include="Resources\Images\Brok.jpg" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BrokFindTeacher.Models;
+using BrokFindTeacher.UserControls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +30,24 @@ namespace BrokFindTeacher.Windows
         {
             if (e.LeftButton == MouseButtonState.Pressed)
                 DragMove();
+        }
+
+        private void StackPanel_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (var item in new Repository.RepositoryPerson().People)
+            {
+                var personControl = new UserControls.usPeople();
+                personControl.DataContext = item;
+                personControl.Tag = item.Name;
+                personControl.MouseLeftButtonDown += PersonControl_MouseLeftButtonDown;
+                spPeople.Children.Add(personControl);
+            }
+        }
+
+        private void PersonControl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            usInfo.DataContext = new Repository.RepositoryPerson().People.FirstOrDefault(s => s.Name == (sender as usPeople).Tag);
+
         }
     }
 }

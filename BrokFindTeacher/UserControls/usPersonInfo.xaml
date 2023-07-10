@@ -5,10 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:BrokFindTeacher.UserControls"
              xmlns:cc="clr-namespace:BrokFindTeacher.CustomControls"
+             xmlns:mm="clr-namespace:BrokFindTeacher.Models"
              mc:Ignorable="d"
              d:DesignHeight="380"
              d:DesignWidth="380"
              >
+    <UserControl.DataContext>
+        <mm:Person/>
+    </UserControl.DataContext>
     <Border
         CornerRadius="200"
         Background="{StaticResource bgProfile}">
@@ -25,6 +29,9 @@
                     Width="190"
                     Height="200"
                     >
+                <Border.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="{Binding Image}"/>
+                </Border.Background>
                 <Border
                     BorderThickness="2"
                     BorderBrush="{StaticResource bbBorderUserControls}"
@@ -38,7 +45,7 @@
                             <GradientStop Color="Transparent" Offset="1"/>
                         </LinearGradientBrush>
                     </Border.Background>
-                    <Label Content="@Master Brok"
+                    <Label Content="{Binding Name}"
                            Foreground="White"
                            FontWeight="SemiBold"
                            FontFamily="{StaticResource RobotoMono}"
