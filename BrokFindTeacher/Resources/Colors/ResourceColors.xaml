@@ -1,6 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-
     <SolidColorBrush x:Key="bgEllipse1" Color="#FFF0E1"/>
     <SolidColorBrush x:Key="bgEllipse2" Color="#F6FBFF"/>
     <SolidColorBrush x:Key="fgTitle1" Color="#5E4D55"/>
