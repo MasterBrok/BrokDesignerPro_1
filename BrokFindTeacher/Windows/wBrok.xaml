@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BrokFindTeacher.Windows"
         mc:Ignorable="d"
-        Title="wBrok" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        x:Name="wMain"
+        MouseDown="wMain_MouseDown"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        Height="750"
+        Width="1200"
+        >
     <Grid>
-
+        <Border Style="{StaticResource BorderMain}"
+                >
+            <!--Background-->
+            <Border Style="{StaticResource BorderLeft}"
+                    >
+                <Ellipse Style="{StaticResource EllipseLeft}"/>
+            </Border>
+        </Border>
+        <Border
+            Style="{StaticResource BorderBottom}"
+            />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Canvas
+                Grid.Row="0"
+                >
+                <StackPanel Orientation="Horizontal"
+                            Canvas.Top="54" Canvas.Left="200">
+                    <Path
+                        Data="{StaticResource PathSummer}"
+                        Style="{StaticResource Path1}"
+                        />
+                    <Label
+                        Style="{StaticResource LabelPath}"
+                        Content="Brok" />
+                </StackPanel>
+            </Canvas>
+        </Grid>
     </Grid>
 </Window>
